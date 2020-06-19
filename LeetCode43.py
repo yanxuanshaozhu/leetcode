@@ -9,7 +9,7 @@ def multiply(str1, str2):
     result = 0
     for i in range(len(str1)):
         for j in range(len(str2)):
-            result += int(str1[i]) * pow(10, (len(str1) - 1 - i)) * int(str2[j]) * 10 ** (len(str2) - 1 - j)
+            result += int(str1[i]) * 10 ** (len(str1) - 1 - i) * int(str2[j]) * 10 ** (len(str2) - 1 - j)
     return str(result)
 
 
